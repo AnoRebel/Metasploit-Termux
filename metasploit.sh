@@ -90,7 +90,7 @@ echo "Creating database" | lolcat
 cd $msfpath/metasploit-framework/config
 #curl -LO https://Auxilus.github.io/database.yml | lolcat
 #curl -LO https://raw.githubusercontent.com/Hax4us/Metasploit_termux/master/database.yml | lolcat
-curl -LO https://raw.githubusercontent.com/anorebel/Metasploit_termux/matser/database.yml | lolcat
+curl -LO https://raw.githubusercontent.com/anorebel/Metasploit-Termux/master/database.yml | lolcat
 
 mkdir -p $PREFIX/var/lib/postgresql
 initdb $PREFIX/var/lib/postgresql | lolcat
