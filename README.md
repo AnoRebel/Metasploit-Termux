@@ -37,10 +37,10 @@ Oh, some space and patients too..
 ## Links
 ___
 
-[Play-Store](https://play.google.com/store/apps/details?id=com.termux)
+[Play-Store Termux](https://play.google.com/store/apps/details?id=com.termux)
 
-[F-Droid](https://f-droid.org/repository/browse/?fdid=com.termux)
+[F-Droid Termux](https://f-droid.org/repository/browse/?fdid=com.termux)
 
-[Wiki](https://wiki.termux.com/wiki/)
+[Wiki Termux](https://wiki.termux.com/wiki/)
 
 [HackEAC](https://www.hackeac.com)
