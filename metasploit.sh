@@ -6,7 +6,7 @@ echo "##############################################" | lolcat
 echo " Auto Install Metasploit " | lolcat
 echo "##############################################" | lolcat
 
-msfvar=4.16.48
+msfvar=4.16.49
 msfpath='/data/data/com.termux/files/home'
 if [ -d "$msfpath/metasploit-framework" ]; then
 	echo "metasploit is installed" | lolcat
