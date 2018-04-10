@@ -30,9 +30,9 @@ Oh, some space and patients too..
 ### Credits
 ---
 
-* Termux
-* iqbalfaf
-* Hax4us
+* [Termux](https://termux.com/)
+* [iqbalfaf](https://github.com/iqbalfaf/)
+* [Hax4us](https://github.com/Hax4us/)
 
 ## Links
 ___
