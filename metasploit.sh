@@ -1,15 +1,15 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-apt install ruby
+apt install ruby -y
 gem install lolcat
 echo "##############################################" | lolcat
 echo " Auto Install Metasploit " | lolcat
 echo "##############################################" | lolcat
 
-msfvar=4.16.49
+msfvar=5.0.86
 msfpath='/data/data/com.termux/files/home'
 if [ -d "$msfpath/metasploit-framework" ]; then
-	echo "metasploit is installed" | lolcat
+	echo "Metasploit is installed." | lolcat
 	exit 1
 fi
 
@@ -30,7 +30,7 @@ cd $msfpath/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
 
-echo "Bundler is installing" | lolcat
+echo "Bundler is installing.." | lolcat
 gem install bundler | lolcat
 
 isNokogiri=$(gem list nokogiri -i)
@@ -67,7 +67,7 @@ fi
 cd $msfpath/metasploit-framework
 bundle install -j5 | lolcat
 
-echo "Gems installed" | lolcat
+echo "Gems installed." | lolcat
 
 $PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
 rm ./modules/auxiliary/gather/http_pdf_authors.rb
@@ -86,7 +86,7 @@ ln -s $msfpath/metasploit-framework/msfupdate /data/data/com.termux/files/usr/bi
 
 termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/2.4.0/gems/pg-0.20.0/lib/pg_ext.so | lolcat
 
-echo "Creating database" | lolcat
+echo "Creating database.." | lolcat
 
 cd $msfpath/metasploit-framework/config
 #curl -LO https://Auxilus.github.io/database.yml | lolcat
